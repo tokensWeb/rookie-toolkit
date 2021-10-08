@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.41.1 (2021-10-08)
+
+
+### Bug Fixes
+
+* **package:** Repository to private ([83469cb](http://private!%20so%20is%20empty/commits/83469cbdb3b597854f29d10b87ee8d8beff2cb87))
+
+
+
+
+
 # [0.41.0](https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/pancake-uikit/compare/@pancakeswap/uikit@0.40.4...@pancakeswap/uikit@0.41.0) (2021-07-21)
 
 
