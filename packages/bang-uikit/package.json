@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/NameWZZ/bang-toolkit/tree/master/packages/bang-uikit",
+  "repository": "private! so is empty ",
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
