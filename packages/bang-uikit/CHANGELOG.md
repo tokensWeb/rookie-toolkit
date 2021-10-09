@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.41.3 (2021-10-09)
+
+
+### Bug Fixes
+
+* **package:** Repository to private ([83469cb](http://private!%20so%20is%20empty/commits/83469cbdb3b597854f29d10b87ee8d8beff2cb87))
+
+
+
+
+
 ## 0.41.2 (2021-10-09)
 
 
