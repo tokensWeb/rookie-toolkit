@@ -53,7 +53,15 @@ const PanelFooter: React.FC<Props> = ({
       </Container>
     );
   }
-
+  return (
+    <Container>
+      <SettingsEntry>
+        <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
+        <SocialLinks />
+      </SettingsEntry>
+    </Container>
+  );
+  /*
   return (
     <Container>
       <SocialEntry>
@@ -66,6 +74,7 @@ const PanelFooter: React.FC<Props> = ({
       </SettingsEntry>
     </Container>
   );
+  */
 };
 
 export default PanelFooter;
