@@ -27,12 +27,23 @@ const CakePrice: React.FC<Props> = ({ cakePriceUsd }) => {
       href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
       target="_blank"
     >
-      <PancakeRoundIcon width="24px" mr="8px" />
-      <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      <img src="https://filex.veld.vip/img/veld/logo.png" width='24' height="24" alt=""/>
+      <Text ml="1" color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />
   );
+  // return cakePriceUsd ? (
+  //   <PriceLink
+  //     href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+  //     target="_blank"
+  //   >
+  //     <PancakeRoundIcon width="24px" mr="8px" />
+  //     <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+  //   </PriceLink>
+  // ) : (
+  //   <Skeleton width={80} height={24} />
+  // );
 };
 
 export default React.memo(CakePrice);

@@ -8,6 +8,7 @@ import CakePrice from "./CakePrice";
 import ThemeSwitcher from "./ThemeSwitcher";
 import SocialLinks from "./SocialLinks";
 import LangSelector from "./LangSelector";
+import BlockNumber from './BlockNumber'
 
 interface Props extends PanelProps, PushedProps {}
 
@@ -43,6 +44,7 @@ const PanelFooter: React.FC<Props> = ({
   currentLang,
   langs,
   setLang,
+  blockNumber
 }) => {
   if (!isPushed) {
     return (
@@ -53,7 +55,6 @@ const PanelFooter: React.FC<Props> = ({
       </Container>
     );
   }
-
   return (
     <Container>
       <SocialEntry>
@@ -61,11 +62,22 @@ const PanelFooter: React.FC<Props> = ({
         <SocialLinks />
       </SocialEntry>
       <SettingsEntry>
-        <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
-        <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
+        <BlockNumber blockNumber={blockNumber} />
       </SettingsEntry>
     </Container>
   );
+  // return (
+  //   <Container>
+  //     <SocialEntry>
+  //       <CakePrice cakePriceUsd={cakePriceUsd} />
+  //       <SocialLinks />
+  //     </SocialEntry>
+  //     <SettingsEntry>
+  //       <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
+  //       <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
+  //     </SettingsEntry>
+  //   </Container>
+  // );
 };
 
 export default PanelFooter;
